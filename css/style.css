@@ -1,0 +1,106 @@
+/* ******************
+
+      ROOT
+
+****************** */
+
+:root {
+  --brand-color: #f2d356;
+  --light-tint: #ecdc9d;
+  --brand-shade: #ac953a;
+
+  --main-font: "Rubik", sans-serif;
+}
+
+/* ******************
+
+      RESET
+
+****************** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--main-font);
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/* ******************
+
+      GENERAL COMPONENTS
+
+****************** */
+
+.container {
+  max-width: 1200px;
+}
+
+/* ******************
+
+      HEADER SECTION
+
+****************** */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-tint);
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 7.2rem;
+}
+
+/* ******************
+
+      HERO SECTION
+
+****************** */
+
+.section-hero {
+  background-color: var(--light-tint);
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.secondary-btn:link {
+  font-size: 2rem;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-img {
+  width: 100%;
+}
