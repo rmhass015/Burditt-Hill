@@ -26,6 +26,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -80,6 +81,8 @@ body {
   background-color: var(--light-tint);
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: fixed;
+  width: 100%;
 }
 
 .logo {
@@ -120,6 +123,22 @@ body {
 .main-nav-link.nav-cta:active {
   background-color: #fff;
   transition: 200ms;
+}
+
+header.sticky {
+  background: #000;
+  transition: all 0.3s;
+}
+
+header.sticky .logo,
+header.sticky .main-nav-link:link,
+header.sticky .main-nav-link:visited {
+  color: var(--brand-color);
+}
+
+header.sticky .main-nav-link:hover,
+header.sticky .main-nav-link:active {
+  color: #fff;
 }
 
 /* ******************
@@ -171,3 +190,7 @@ body {
       MENU SECTION
 
 ****************** */
+
+.menu {
+  min-height: 100vh;
+}
