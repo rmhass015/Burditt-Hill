@@ -49,7 +49,7 @@ body {
   text-decoration: none;
   font-family: var(--main-font);
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
   color: #555;
   padding: 1.2rem 2.4rem;
   transition: all 0.3s;
@@ -58,7 +58,7 @@ body {
 .btn:link,
 .btn:visited {
   background-color: #fff;
-  border-radius: 7rem;
+  border-radius: 1rem;
 }
 
 .btn:hover,
@@ -86,6 +86,42 @@ body {
   height: 7.2rem;
 }
 
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #fff;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 7px;
+  color: #fff;
+  background-color: var(--brand-color);
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #fff;
+  transition: 200ms;
+}
+
 /* ******************
 
       HERO SECTION
@@ -98,13 +134,21 @@ body {
 }
 
 .hero {
-  max-width: 130rem;
+  max-width: 150rem;
   margin: 0 auto;
   padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
   align-items: center;
+}
+
+.hero .container .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-textbox {
 }
 
 .hero-title {
@@ -121,3 +165,9 @@ body {
 .hero-img {
   width: 100%;
 }
+
+/* ******************
+
+      MENU SECTION
+
+****************** */
